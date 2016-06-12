@@ -53,4 +53,5 @@ Usage:
             
 # Credit
 [https://github.com/digital-magic-io/akka-cqrs-dsl](https://github.com/digital-magic-io/akka-cqrs-dsl)
+
 [https://github.com/dnvriend/akka-persistence-inmemory](https://github.com/dnvriend/akka-persistence-inmemory)
