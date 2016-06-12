@@ -12,7 +12,8 @@ update the component state:
       
 The component maintains state, processes events and publishes a value to subscribers or dependencies.
 
-Wrapping the logic into a component can be done with an Akka actor that handles the boilerplate:
+Wrapping the logic into a component can be done with a (persistent) Akka actor that handles the boilerplate, so the
+usage is simple and focuses on the logic:
 
       class StatefulService extends SimpleComponent[Int, StateCommand](0, processor)
      
