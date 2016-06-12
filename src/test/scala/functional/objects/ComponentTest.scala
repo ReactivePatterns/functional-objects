@@ -26,9 +26,9 @@ object Domain {
 
 import Domain._
 
-class DSLSpec(system: ActorSystem) extends TestKit(system) with ImplicitSender with WordSpecLike with Matchers with BeforeAndAfterAll {
+class ComponentTest(system: ActorSystem) extends TestKit(system) with ImplicitSender with WordSpecLike with Matchers with BeforeAndAfterAll {
 
-  def this() = this(ActorSystem("authx-test", ConfigFactory.load("application.conf")))
+  def this() = this(ActorSystem("auth-test", ConfigFactory.load("application.conf")))
 
   val processor: PartialFunction[(Int, StateCommand), Int] = {
     case (current: Int, command: SetValue) => command.newValue
